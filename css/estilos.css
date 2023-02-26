@@ -1,0 +1,20 @@
+
+
+body {background-color: rgb(255, 0, 0); font-family: gloock;}
+@media only screen and (max-width: 600px){
+    
+body {background-color: gray ;}}
+
+    *{box-sizing: border-box;}
+    H1 {
+        color: rgb(255, 0, 200); width: 400px;
+        padding: 1px;
+        margin-top: 40px;
+        margin-bottom: 5px;
+        border: solid rgb(115, 136, 20);}
+
+    H2 {color: rgba(0, 255, 242, 0.89); width: 350px;}
+
+    #mi_parrafo{color: rgb(25, 0, 255); width: 250px;}
+
+    /**comentarios para desarrolladores*/
