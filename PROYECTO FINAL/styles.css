@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Gloock&family=Josefin+Sans:ital,wght@0,200;0,600;1,300;1,400&family=Shantell+Sans:wght@300&family=Yellowtail&display=swap');
+h1{color: black;
+}
+h2{color: black;}
+
+
+
+*{
+    font-family: "shantell-sans";
+    margin: 0;
+    padding: 0;
+}
+html{
+ scroll-behavior:smooth ;   
+}
+.inicio{
+    background: linear-gradient(rgba(0,0,.3), rgba(0,0,.3));
+    background-image:url("imagenes/fondo.jpg");
+    background-size: cover;
+    background-position: center center;
+   
+    color: #fff;
+}
+.contenido-seccion{}
