@@ -1,24 +1,101 @@
+/** GOOGLE FONTS*/
+
 @import url('https://fonts.googleapis.com/css2?family=Gloock&family=Josefin+Sans:ital,wght@0,200;0,600;1,300;1,400&family=Shantell+Sans:wght@300&family=Yellowtail&display=swap');
-h1{color: black;
+
+
+/**VARIABLES CSS */
+
+:root{
+
+    font-size: 3px;
+
+    /**COLORES*/
+
+    --title-color:#0B0A0A;
+    --text-color:#403A3A;
+    --text-color-light:#707070;
+    --container-color:#FAFAFA;
+    --container-color-alt:#F0EFEF;
+    --body-color: #FCFCFC;
+
+/**FUENTE Y TIPOGRAFIA*/
+
+    font-family: "Josefina-Sans";
+    --h1-font-size:1.5px;
+    --h2-font-size: 1.25px;
+    --h3-font-size: 1px;
+    --normal-font-size: .938px;
+    --small-font-size: .875rem;
+    --smaller-font-size: .813rem;
+
+ /**font weight*/
+ 
+ --font-medium:500;
+ --font-semi-bold:600;
+
+ /**MARGENES*/
+
+ --mb1-1: .5px;
+ --mb-2: 1px;
+ --mb-2: 1.5px;
+
+/** z index*/
+--z-tooltips:10;
+--z-fixed:100; 
 }
-h2{color: black;}
+    
+/**BASE*/
+*,::before,::after {
+    box-sizing: border-box;
 
-
-
-*{
-    font-family: "shantell-sans";
-    margin: 0;
-    padding: 0;
 }
 html{
- scroll-behavior:smooth ;   
+    scroll-behavior: smooth;
 }
-.inicio{
-    background: linear-gradient(rgba(0,0,.3), rgba(0,0,.3));
-    background-image:url("imagenes/fondo.jpg");
-    background-size: cover;
-    background-position: center center;
-   
-    color: #fff;
+
+/**clases modificadas para reducir tamaño*/
+body{
+    margin: 0 0 var(--header-height) 0;
+    padding: 0;
+    font-family: var(--body-font);
+    font-size: var(--normal-font-size);
+    background-color: var(--body-color);
+    color: var(--text-color);   
 }
-.contenido-seccion{}
+
+h1,h2,h3,ul,p{
+    margin: 0;
+}
+h1,h2,h3{
+    color: var(--title-color);
+    font-weight: var(--font-medium);
+}
+
+ul{
+    padding: 0;
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+img{
+    max-width: 100%;
+    height: auto;
+}
+
+/**clases css*/
+
+.section{
+    padding: 1.5rem 0;
+}
+.section-title{
+    font-size: var(--h2-font-size);
+    color: var(--title-color);
+    font-weight: var(--font-semi-bold);
+    text-transform:uppercase ;
+    letter-spacing: .35rem;
+    text-align: center;
+    margin-bottom: var(--mb-3);
+}
