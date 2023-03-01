@@ -1,0 +1,118 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+/* Estilos globales */
+
+div{
+    width: 100%;
+}
+img{
+    display:block;
+    width: 250px;
+    height: auto;
+    margin-top: 250px;
+    margin-bottom: 0;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 999px;
+}
+body {
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+  }
+  
+  h1, h2, h3 {
+    font-weight: bold;
+    margin: 0.5em 0;
+  }
+  
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  a {
+    color: #333;
+    text-decoration: none;
+  }
+  
+  /* Estilos del encabezado */
+  header {
+    background-color: #f2f2f2;
+    padding: 1em;
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
+  
+  nav ul {
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+  }
+  
+  nav li {
+    margin: 0 1em;
+  }
+  
+  /* Estilos de la sección "Sobre mí" */
+  #sobre-mi {
+    background-color: #fff;
+    padding: 2em;
+  }
+  
+  /* Estilos de la sección "Experiencia" */
+  #experiencia {
+    background-color: #f2f2f2;
+    padding: 2em;
+  }
+  
+  #experiencia li {
+    border-left: 3px solid #333;
+    margin-bottom: 1em;
+    padding-left: 1em;
+  }
+  
+  #experiencia h3 {
+    margin-top: 0;
+  }
+  
+  #experiencia p {
+    margin: 0;
+  }
+  
+  /* Estilos de la sección "Educación" */
+  #educacion {
+    background-color: #fff;
+    padding: 2em;
+  }
+  
+  #educacion li {
+    border-left: 3px solid #333;
+    margin-bottom: 1em;
+    padding-left: 1em;
+  }
+  
+  #educacion h3 {
+    margin-top: 0;
+  }
+  
+  #educacion p {
+    margin: 0;
+  }
+  
+  /* Estilos de la sección "Habilidades" */
+  #habilidades {
+    background-color: #f2f2f2;
+    padding: 2em;
+  }
+  
+  #habilidades li {
+    display: inline-block;
+    margin-right: 1em;
+  }
+  
+  #habilidades li:last-child {
+    margin-right: 0;
+  }
+  
