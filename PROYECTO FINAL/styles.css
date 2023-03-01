@@ -1,13 +1,12 @@
 /** GOOGLE FONTS*/
 
-@import url('https://fonts.googleapis.com/css2?family=Gloock&family=Josefin+Sans:ital,wght@0,200;0,600;1,300;1,400&family=Shantell+Sans:wght@300&family=Yellowtail&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
 
 /**VARIABLES CSS */
 
 :root{
 
-    font-size: 3px;
+    font-size: 3rem;
 
     /**COLORES*/
 
@@ -20,13 +19,13 @@
 
 /**FUENTE Y TIPOGRAFIA*/
 
-    font-family: "Josefina-Sans";
-    --h1-font-size:1.5px;
-    --h2-font-size: 1.25px;
-    --h3-font-size: 1px;
-    --normal-font-size: .938px;
-    --small-font-size: .875rem;
-    --smaller-font-size: .813rem;
+    font-family:  'Poppins', sans-serif;
+    --h1-font-size:1.5rem;
+    --h2-font-size: 1.25rem;
+    --h3-font-size: 1rem;
+    --normal-font-size: .538rem;
+    --small-font-size: .475rem;
+    --smaller-font-size: .413rem;
 
  /**font weight*/
  
@@ -72,7 +71,7 @@ h1,h2,h3{
 }
 
 ul{
-    padding: 0;
+    padding: 0%;
     list-style: none;
 }
 
@@ -98,4 +97,66 @@ img{
     letter-spacing: .35rem;
     text-align: center;
     margin-bottom: var(--mb-3);
+}
+
+/** layout (disposicion)*/
+
+.bd-container{
+    max-width: 968px;
+    width: calc(100% - 3rem);
+    margin-left: var(--mb-3);
+    margin-right: var(--mb-3);
+}
+.bd-grid{
+    display: grid;
+    gap: 1.5rem;
+}
+.l-header{
+    width: 100%;
+    position:fixed ;
+    bottom: 0;
+    left: 0;
+    z-index:var(--z-fixed) ;
+    background-color: var(--body-color);
+    box-shadow: 0 -1px 4px  rgba(0,0,0,.1);
+    transition: .3s;
+}
+/**navegacion*/
+.nav{
+    height: var(--header-height);
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+}
+@media screen and (max-width: 968px){
+    .nav__menu{
+        position: fixed;
+        bottom: var(--header-height);
+        left: 0;
+        width: 100%;
+        padding: 2rem 1.5rem;
+        background-color: var(--body-color);
+        box-shadow: 0 1px 4px rgba(0,0,0,.1);
+        border-radius: 1rem 1rem 0 0;
+        z-index: var(--z-fixed);
+        transition: .3;
+    }
+}
+.nav__logo,
+.nav__toggle{
+    color:var(--title-color);
+    font-weight: var(--font-medium);
+}
+.nav__toggle{
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+.nav__item{
+    text-align: center;
+}
+.nav__list{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 2rem;
+    
 }
