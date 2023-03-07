@@ -1,3 +1,6 @@
+//PROYECTO FINAL TERMINADO
+//GRACIAS POR TODO Y ESPERO SU PRONTA DEVOLUCION
+
 
 // Obtener los elementos del DOM
 let nombre = document.getElementById('Nombre');
